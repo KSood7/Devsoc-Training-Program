@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishh Sood | Boarding Pass</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .boarding-pass {
+            background: white;
+            width: 90%;
+            max-width: 700px;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            border: 2px solid #0073e6;
+            position: relative;
+        }
+        .boarding-header {
+            background: #0073e6;
+            color: white;
+            padding: 20px;
+            border-radius: 15px 15px 0 0;
+            font-size: 1.8rem;
+            text-align: center;
+            font-weight: bold;
+        }
+        .boarding-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .info {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed #bbb;
+            padding-bottom: 10px;
+        }
+        .barcode {
+            width: 100%;
+            height: 50px;
+            background: repeating-linear-gradient(90deg, #000, #000 3px, #fff 3px, #fff 6px);
+            margin-top: 20px;
+        }
+        a {
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="boarding-pass">
+        <div class="boarding-header">BOARDING PASS</div>
+        
+        <div class="boarding-content">
+            <div class="info">
+                <strong>Passenger:</strong> <span>Krishh Sood</span>
+            </div>
+            <div class="info">
+                <strong>Destination:</strong> <span>DevSoc Training Program</span>
+            </div>
+            <div class="info">
+                <strong>Seat:</strong> <span>1A</span>
+            </div>
+            <div class="info">
+                <strong>Gate:</strong> <span>Marketing & Tech</span>
+            </div>
+            <div class="info">
+                <strong>Boarding Time:</strong> <span>Now</span>
+            </div>
+            <div class="info">
+                <strong>Projects:</strong>
+                <span>
+                    📌 Marketing at UNSW HinduSoc<br>
+                    💻 Programming<br>
+                </span>
+            </div>
+            <div class="info">
+                <strong>Contact:</strong>
+                <span>
+                    Email: <a href="mailto:soodkrishh@gmail.com">soodkrishh@gmail.com</a>
+                </span>
+            </div>
+        </div>
+        
+        <div class="barcode"></div>
+    </div>
+</body>
+</html>
